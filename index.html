@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A love letter written in code" />
+    <title>You Are My Forever | Purpose Day</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Floating Particles Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Audio Element (Optional Background Music) -->
+    <audio id="bgMusic" loop>
+      <source
+        src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA="
+        type="audio/wav"
+      />
+    </audio>
+
+    <!-- Landing Page (Before Enter My Heart) -->
+    <div class="landing-overlay" id="landingOverlay">
+      <div class="landing-content">
+        <div class="landing-animation">
+          <div class="heart-loader">
+            <svg
+              width="100"
+              height="100"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+          </div>
+          <h1 class="landing-title">
+            <span class="landing-line">To My Beautiful Wife</span>
+            <span class="landing-line special">Happy Purpose Day</span>
+          </h1>
+          <p class="landing-message">
+            I've created something special for you...<br />
+            Something from the heart, built with love.
+          </p>
+          <button class="landing-enter-btn" id="landingEnterBtn">
+            <span class="btn-shine"></span>
+            <span class="btn-text">Enter My Heart ❤️</span>
+          </button>
+          <div class="landing-hint">Click when you're ready to feel loved</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle music">
+      <svg
+        class="music-icon"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M9 18V5l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+      </svg>
+    </button>
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <div class="hero-text-container">
+          <h1 class="hero-title">
+            <span class="title-line">You Are Not</span>
+            <span class="title-line highlight">My Purpose...</span>
+            <span class="title-line">You Are My</span>
+            <span class="title-line highlight-forever">Forever</span>
+          </h1>
+          <p class="hero-subtitle">
+            On this Purpose Day, I just want you to know —<br />
+            my life begins with you.
+          </p>
+          <button class="cta-button" id="enterButton">
+            <span class="button-text">Enter My Heart</span>
+            <span class="button-glow"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span class="scroll-text">Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- Section 2: Our Story Section -->
+    <section class="our-story-section" id="story">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Chapter One</span>
+          <h2 class="section-title">Where It All Began</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="story-timeline">
+          <div class="story-card" data-reveal>
+            <div class="story-number">01</div>
+            <div class="story-content">
+              <h3>The First Glance</h3>
+              <p>
+                I remember the exact moment I first saw you. Time slowed, the
+                world blurred, and all I could see was you. In that instant, I
+                knew my life was about to change forever.
+              </p>
+            </div>
+            <div class="story-decoration"></div>
+          </div>
+
+          <div class="story-card" data-reveal>
+            <div class="story-number">02</div>
+            <div class="story-content">
+              <h3>The Connection</h3>
+              <p>
+                Our conversations felt like coming home. Every word you spoke,
+                every laugh we shared, every silence we enjoyed — it all felt
+                like pieces of a puzzle finally finding their place.
+              </p>
+            </div>
+            <div class="story-decoration"></div>
+          </div>
+
+          <div class="story-card" data-reveal>
+            <div class="story-number">03</div>
+            <div class="story-content">
+              <h3>Falling Deeper</h3>
+              <p>
+                With each passing day, I discovered new layers of your beautiful
+                soul. Your kindness, your strength, your dreams — everything
+                about you made me fall deeper into a love I never knew existed.
+              </p>
+            </div>
+            <div class="story-decoration"></div>
+          </div>
+
+          <div class="story-card" data-reveal>
+            <div class="story-number">04</div>
+            <div class="story-content">
+              <h3>Forever Started</h3>
+              <p>
+                The day you became mine wasn't just a date on the calendar — it
+                was the beginning of eternity. Every moment since has been a
+                blessing, every day a new page in our forever story.
+              </p>
+            </div>
+            <div class="story-decoration"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Moments</span>
+          <h2 class="section-title">Every Picture Tells Our Story</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="photo-gallery">
+          <div class="photo-frame" data-reveal>
+            <div class="photo-container">
+              <img
+                src="3.jpeg"
+                alt="Our beautiful moment together"
+                class="gallery-photo"
+              />
+              <div class="photo-overlay">
+                <p class="photo-caption">The moment I knew you were the one</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-frame" data-reveal>
+            <div class="photo-container">
+              <img
+                src="2.jpeg"
+                alt="Our cherished memory"
+                class="gallery-photo"
+              />
+              <div class="photo-overlay">
+                <p class="photo-caption">
+                  Your smile lights up my entire world
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-frame" data-reveal>
+            <div class="photo-container">
+              <img
+                src="4.jpeg"
+                alt="Us being happy together"
+                class="gallery-photo"
+              />
+              <div class="photo-overlay">
+                <p class="photo-caption">Forever my favorite adventure</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-frame" data-reveal>
+            <div class="photo-container">
+              <img src="1.jpeg" alt="Our precious time" class="gallery-photo" />
+              <div class="photo-overlay">
+                <p class="photo-caption">Home is wherever I'm with you</p>
+              </div>
+            </div>
+          </div>
+          <div class="photo-frame" data-reveal>
+            <div class="photo-container">
+              <img src="6.jpeg" alt="Our precious time" class="gallery-photo" />
+              <div class="photo-overlay">
+                <p class="photo-caption">Home is wherever I'm with you</p>
+              </div>
+            </div>
+          </div>
+          <div class="photo-frame" data-reveal>
+            <div class="photo-container">
+              <img
+                src="WhatsApp Image 2026-02-08 at 7.52.29 PM.jpeg"
+                alt="Our precious time"
+                class="gallery-photo"
+              />
+              <div class="photo-overlay">
+                <p class="photo-caption">Home is wherever I'm with you</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Why You Are My Purpose -->
+    <section class="purpose-section" id="purpose">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Truth</span>
+          <h2 class="section-title">Why You Are Everything</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-card" data-reveal>
+            <div class="card-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                ></path>
+              </svg>
+            </div>
+            <h3>My Safe Haven</h3>
+            <p>
+              In a world of chaos and uncertainty, you are my peace. Your
+              embrace is home, your voice is comfort, and your presence is the
+              sanctuary where my soul finds rest.
+            </p>
+          </div>
+
+          <div class="purpose-card" data-reveal>
+            <div class="card-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <h3>My Reason to Wake</h3>
+            <p>
+              Every morning, I open my eyes and thank the universe for another
+              day with you. You give meaning to my existence, purpose to my
+              actions, and joy to every breath I take.
+            </p>
+          </div>
+
+          <div class="purpose-card" data-reveal>
+            <div class="card-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+            </div>
+            <h3>My Greatest Dream</h3>
+            <p>
+              I've achieved goals and reached milestones, but nothing compares
+              to the dream that came true when you said yes to forever. You are
+              the dream I never want to wake up from.
+            </p>
+          </div>
+
+          <div class="purpose-card" data-reveal>
+            <div class="card-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3>My Better Half</h3>
+            <p>
+              You complete me in ways I never knew I needed. Your strengths
+              balance my weaknesses, your wisdom guides my choices, and your
+              love makes me the best version of myself.
+            </p>
+          </div>
+
+          <div class="purpose-card" data-reveal>
+            <div class="card-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                ></path>
+              </svg>
+            </div>
+            <h3>My Forever Promise</h3>
+            <p>
+              In this life and every life after, I choose you. Through every
+              storm and every sunshine, every challenge and every victory — my
+              hand will always find yours.
+            </p>
+          </div>
+
+          <div class="purpose-card" data-reveal>
+            <div class="card-icon">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path
+                  d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+                ></path>
+              </svg>
+            </div>
+            <h3>My Life's Masterpiece</h3>
+            <p>
+              If my life were a canvas, you are the masterpiece. Every color,
+              every brushstroke, every beautiful detail — it all exists because
+              you brought art into my world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Love Letter Section -->
+    <section class="letter-section" id="letter">
+      <div class="container">
+        <div class="letter-container">
+          <div class="letter-paper">
+            <div class="letter-header">
+              <span class="letter-date">Purpose Day, 2026</span>
+              <h2 class="letter-title">To My Beloved Wife</h2>
+            </div>
+
+            <div class="letter-content" id="letterContent">
+              <p class="letter-paragraph">My Dearest Love,</p>
+
+              <p class="letter-paragraph">
+                As I sit here, trying to find words worthy of what you mean to
+                me, I realize that no language — not even the code I write — can
+                truly capture the depth of my love for you.
+              </p>
+
+              <p class="letter-paragraph">
+                You are the algorithm that optimizes my life, the variable that
+                gives meaning to every equation, the constant in my
+                ever-changing world. But more than that, you are the heartbeat
+                behind every dream I dare to dream.
+              </p>
+
+              <p class="letter-paragraph">
+                People search their whole lives for purpose, for meaning, for
+                that one thing that makes it all worthwhile. I found mine the
+                day I found you. You didn't just give me purpose — you became my
+                purpose, my passion, my everything.
+              </p>
+
+              <p class="letter-paragraph">
+                Every morning when I wake up beside you, I am reminded of how
+                blessed I am. Every smile you give me is a gift I never want to
+                take for granted. Every moment we share is a treasure I'll carry
+                in my heart forever.
+              </p>
+
+              <p class="letter-paragraph">
+                This website is more than just lines of code. It's a digital
+                love letter, a virtual embrace, a small attempt to show you what
+                words alone cannot express. Every pixel was placed with love,
+                every animation designed with you in mind, every word chosen to
+                make you feel what you truly are — absolutely everything to me.
+              </p>
+
+              <p class="letter-paragraph">
+                Thank you for being my wife, my best friend, my partner in
+                everything. Thank you for choosing me, for loving me, for making
+                every day feel like a beautiful dream I never want to end.
+              </p>
+
+              <p class="letter-paragraph">
+                On this Purpose Day and every day after, know that you are loved
+                beyond measure, cherished beyond words, and adored beyond
+                compare.
+              </p>
+
+              <p class="letter-signature">
+                Forever and always yours,<br />
+                <span class="signature-name">Your Husband</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Memory / Promise Section -->
+    <section class="promise-section" id="promises">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Vows</span>
+          <h2 class="section-title">Promises I Make to You</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="promises-container">
+          <div class="promise-item" data-reveal>
+            <div class="promise-icon">❤️</div>
+            <p class="promise-text">
+              I promise to love you fiercely on your best days and even more
+              gently on your hardest ones.
+            </p>
+          </div>
+
+          <div class="promise-item" data-reveal>
+            <div class="promise-icon">🌟</div>
+            <p class="promise-text">
+              I promise to be your biggest cheerleader, celebrating every
+              victory and supporting you through every challenge.
+            </p>
+          </div>
+
+          <div class="promise-item" data-reveal>
+            <div class="promise-icon">🏡</div>
+            <p class="promise-text">
+              I promise to build a life with you where laughter echoes through
+              our home and love is the foundation of everything we do.
+            </p>
+          </div>
+
+          <div class="promise-item" data-reveal>
+            <div class="promise-icon">💫</div>
+            <p class="promise-text">
+              I promise to grow old with you, creating memories that will last
+              lifetimes and love that transcends time itself.
+            </p>
+          </div>
+
+          <div class="promise-item" data-reveal>
+            <div class="promise-icon">🌹</div>
+            <p class="promise-text">
+              I promise to choose you, every single day, in every single way,
+              for the rest of our forever.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Hearts Animation -->
+      <div class="floating-hearts" id="floatingHearts"></div>
+    </section>
+
+    <!-- Section 7: Surprise Gifts Section -->
+    <section class="gifts-section" id="gifts">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Special Surprises</span>
+          <h2 class="section-title">I Have Something For You...</h2>
+          <div class="title-underline"></div>
+          <p class="gifts-intro">Click each gift to reveal your surprise 💝</p>
+        </div>
+
+        <div class="gifts-grid">
+          <div class="gift-box" data-reveal>
+            <div class="gift-wrapper">
+              <div class="gift-bow">🎀</div>
+              <div class="gift-content">
+                <div class="gift-front">
+                  <div class="gift-icon">🎁</div>
+                  <h3>Gift #1</h3>
+                  <p>Tap to open</p>
+                </div>
+                <div class="gift-reveal">
+                  <div class="gift-message">
+                    <h4>A Weekend Getaway</h4>
+                    <p>
+                      Pack your bags, my love! We're going on a romantic escape
+                      to create more beautiful memories together. ✨
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gift-box" data-reveal>
+            <div class="gift-wrapper">
+              <div class="gift-bow">🎀</div>
+              <div class="gift-content">
+                <div class="gift-front">
+                  <div class="gift-icon">💝</div>
+                  <h3>Gift #2</h3>
+                  <p>Tap to open</p>
+                </div>
+                <div class="gift-reveal">
+                  <div class="gift-message">
+                    <h4>Your Special Surprise</h4>
+                    <p>
+                      That thing you've been dreaming about? Consider it yours.
+                      Because your happiness is my greatest joy. 💖
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gift-box" data-reveal>
+            <div class="gift-wrapper">
+              <div class="gift-bow">🎀</div>
+              <div class="gift-content">
+                <div class="gift-front">
+                  <div class="gift-icon">💍</div>
+                  <h3>Gift #3</h3>
+                  <p>Tap to open</p>
+                </div>
+                <div class="gift-reveal">
+                  <div class="gift-message">
+                    <h4>A Special Evening</h4>
+                    <p>
+                      Candlelight dinner, your favorite music, and endless
+                      romance. Just you, me, and our forever. 🕯️
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gift-box" data-reveal>
+            <div class="gift-wrapper">
+              <div class="gift-bow">🎀</div>
+              <div class="gift-content">
+                <div class="gift-front">
+                  <div class="gift-icon">🌹</div>
+                  <h3>Gift #4</h3>
+                  <p>Tap to open</p>
+                </div>
+                <div class="gift-reveal">
+                  <div class="gift-message">
+                    <h4>365 Days of Love</h4>
+                    <p>
+                      A personalized love note for every single day of the year.
+                      Because one lifetime isn't enough to tell you how much I
+                      love you. 💌
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gift-box" data-reveal>
+            <div class="gift-wrapper">
+              <div class="gift-bow">🎀</div>
+              <div class="gift-content">
+                <div class="gift-front">
+                  <div class="gift-icon">✨</div>
+                  <h3>Gift #5</h3>
+                  <p>Tap to open</p>
+                </div>
+                <div class="gift-reveal">
+                  <div class="gift-message">
+                    <h4>Your Dream Come True</h4>
+                    <p>
+                      Remember that dream you shared with me? I've been working
+                      on making it a reality. Get ready to be amazed! 🎊
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gift-box gift-box-special" data-reveal>
+            <div class="gift-wrapper">
+              <div class="gift-bow">🎀</div>
+              <div class="gift-content">
+                <div class="gift-front">
+                  <div class="gift-icon">💖</div>
+                  <h3>The Ultimate Gift</h3>
+                  <p>Tap to open</p>
+                </div>
+                <div class="gift-reveal">
+                  <div class="gift-message">
+                    <h4>My Forever Promise</h4>
+                    <p>
+                      Every day with you, every moment, every breath - that's my
+                      gift. I promise to love you more tomorrow than I do today,
+                      and even more the day after. Forever and always. 💕
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Final Shock Section -->
+    <section class="finale-section" id="finale">
+      <div class="finale-content">
+        <div class="finale-text-container">
+          <p class="finale-intro" data-finale>
+            If I had to choose my purpose again...
+          </p>
+          <h2 class="finale-statement" data-finale>
+            I would still choose<br />
+            <span class="finale-you">YOU</span>
+          </h2>
+          <p class="finale-subtitle" data-finale>
+            Every lifetime. Every universe. Every possibility.
+          </p>
+
+          <div class="finale-heart" data-finale>
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+          </div>
+
+          <h3 class="finale-closing" data-finale>
+            Happy Purpose Day, My Love ❤️
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        Built with infinite love and thousands of lines of code, just for you.
+      </p>
+      <p class="footer-date">© 2026 — A Love That Compiles Forever</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
